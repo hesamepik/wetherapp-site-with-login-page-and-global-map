@@ -1,0 +1,16 @@
+#Weather {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: rgb(255, 255, 255);
+width: 500px;
+min-height: 200px;
+margin: auto;
+margin-bottom: 50px;
+position: relative;
+bottom: -80px;
+padding: 30px;
+border-radius: 30px;
+
+}
