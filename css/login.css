@@ -1,0 +1,88 @@
+/* Reset و تنظیمات کلی */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', 'Segoe UI', sans-serif;
+    direction: rtl;
+    background: #f0f4f8;
+    color: #333;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  /* کانتینر فرم */
+  .login-container {
+    max-width: 360px;
+    background: white;
+    padding: 30px 40px;
+    margin: 80px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* تیتر صفحه */
+  .login-container h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #4a90e2;
+  }
+  
+  /* فیلدهای ورودی */
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1.8px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input[type="email"]:focus,
+  form input[type="password"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px #4a90e2aa;
+  }
+  
+  /* دکمه ورود */
+  form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #357ABD;
+  }
+  
+  /* لینک ثبت نام */
+  .register-text {
+    margin-top: 18px;
+    font-size: 0.9rem;
+  }
+  
+  .register-text a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .register-text a:hover {
+    color: #357ABD;
+    text-decoration: underline;
+  }
+  

@@ -1,23 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Botostart | Weather App</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/wheter.css">
-  </head>
-  <body>
-    <div id="search">
-    
-      <img src="./img/location.png" alt="location" id="location">
-      <input type="text" placeholder="name shahr">
-      <button>search</button>
-    <script src="./app.js"></script>
-   
-    </div>
-  
-    <div id="Weather"></div>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesam | Weather App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/wheter.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <style>
+    body {
+      background-image: url("./img/back.png");
+    }
+  </style>
+</head>
+<body>
 
-  </body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="logo" />
+        <span>هواشناسی</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">خانه</a></li>
+       
+        <li><a href="./map.html">نقشه‌ها</a></li>
+        <li><a href="./aboutsus.html">  درباره ما</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+
+  <div id="search">
+    <img src="./img/location.png" alt="location" id="location" />
+    <input type="text" id="city" placeholder="نام شهر" />
+    <button id="searchBtn">جستجو</button>
+  </div>
+
+  <div id="Weather"></div>
+
+  <footer class="weather-footer">
+    <div class="footer-glass">
+      <div class="footer-brand">
+        <img src="./logo.png" alt="لوگو" />
+        <h2>هواشناسی امروز</h2>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#">خانه</a>
+        <a href="./aboutsus.html">درباره ما</a>
+     
+        <a href="#">تماس</a>
+      </div>
+
+      <div class="footer-social-icons">
+        <a href="#"><img src="./img/instagram-round.png" alt="Instagram" /></a>
+        <a href="#"><img src="./img/twitter-round.png" alt="Twitter" /></a>
+        <a href="#"><img src="./img/telegram-round.png" alt="Telegram" /></a>
+      </div>
+
+      <p class="footer-copy">© 2025 هواشناسی امروز | طراحی با ☁️ در دل آسمان</p>
+    </div>
+  </footer>
+
+  <!-- اسکریپت‌های مورد نیاز -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
+  <script src="./supabaseClient.js"></script>
+  <script src="./app.js" type="module"></script>
+
+</body>
 </html>

@@ -1,0 +1,80 @@
+/* Navbar Style */
+.navbar {
+    width: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    color: #ffe600;
+  }
+  
+ 
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #4facfe;
+      border-radius: 10px;
+      padding: 15px 20px;
+    }
+  
+    .navbar .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  

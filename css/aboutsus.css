@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+* {
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  background: linear-gradient(to bottom, #dbe9f4, #f3faff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.about-container {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.header-glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.header-glass h1 {
+  font-size: 32px;
+  color: #0077b6;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.content-glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.content-glass h2 {
+  color: #023e8a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.content-glass p {
+  line-height: 1.8;
+  color: #444;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.contact-info li {
+  margin-bottom: 8px;
+  color: #555;
+}

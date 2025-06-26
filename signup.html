@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ثبت‌نام | هواشناسی</title>
+  <link rel="stylesheet" href="./css/signup.css" />
+</head>
+<body>
+  <div class="signup-container">
+    <h2>ثبت‌نام</h2>
+    <form onsubmit="handleSignup(event)" novalidate>
+      <input type="email" id="email" placeholder="ایمیل" required autocomplete="email" />
+      <input type="password" id="password" placeholder="رمز عبور" required autocomplete="new-password" />
+      <button type="submit">ثبت‌نام</button>
+    </form>
+    <p class="login-text">
+      حساب دارید؟
+      <a href="login.html">وارد شوید</a>
+    </p>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
+  <script src="./supabaseClient.js"></script>
+
+  <script>
+    async function handleSignup(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password
+      });
+
+      if (error) {
+        alert('خطا در ثبت‌نام: ' + error.message);
+      } else {
+        alert('ثبت‌نام موفق بود! حالا وارد شوید.');
+        window.location.href = 'login.html';
+      }
+    }
+  </script>
+</body>
+</html>
